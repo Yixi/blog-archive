@@ -205,116 +205,6 @@
             
               
                 
-                <a class="post-title-link" href="/2010/08/27/diercizhutixiugaishangxian/" itemprop="url">
-                  第二次主题修改上线
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Postado em
-            <time itemprop="dateCreated" datetime="2010-08-27T16:47:14+08:00" content="2010-08-27">
-              2010-08-27
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; Em
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/网络琐事/" itemprop="url" rel="index">
-                    <span itemprop="name">网络琐事</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p><a href="http://blog.liuyixi.com/wp-content/uploads/2010/08/secondtheme.png"><img src="http://blog.liuyixi.com/wp-content/uploads/2010/08/secondtheme.png" alt="" title="secondtheme"></a></p>
-<p>趁着昨天晚上一个网站项目的交工，晚上折腾了一晚上把博客上次未完善的博客主题进行完善，加上了一直就计划的一些jquery效果。</p>
-<p>修改的地方主要有</p>
-<ul>
-<li>默认本窗口的&lt;a&gt;链接打开，点击后变loading，并在左上角出现提示框。</li>
-<li>侧边栏关闭打开功能。</li>
-<li>页面上加载左上角的提示，这是用的一个flash（貌似老是有进度条不动的事情）。</li>
-<li>舍弃了上次的一些CSS3阴影效果。</li>
-<li>重新搭配了下背景</li>
-<li>内容的字体修改，以及一些样式的修改。</li>
-<li>然后就是其他的一些七七八八的小地方。<br>当然最后我是建议各位看官在chrome下浏览博客。</li>
-</ul>
-<p>页面的效果参考了leeiio的博客，页面字体的大小搭配参考了彩程设计的网站。</p>
-<p>其中使用到了jquery easing插件来实现边栏的抖动效果。</p>
-<p>还有一些小地方以及计划中的东西还需要完善中。</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2010/08/21/xiangpintuyiyangshejibujuwangye/" itemprop="url">
                   像拼图一样设计布局网页。
                 </a>
@@ -1214,6 +1104,107 @@ return array (
 
 
     
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2010/07/15/rangdivjuwangyediduan/" itemprop="url">
+                  让DIV居网页底端
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Postado em
+            <time itemprop="dateCreated" datetime="2010-07-15T22:58:01+08:00" content="2010-07-15">
+              2010-07-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; Em
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/DIV-CSS-Design/" itemprop="url" rel="index">
+                    <span itemprop="name">DIV+CSS Design</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>我要将一个图片作为网站的底部，直接在body 的backgroud 中写成bottom 属性显然是达不到我的要求的，因为我的页面在浏览器高度比较高的情况下内容是无法撑满整个浏览器的，所以在body 的background 将图片写成bottom属性在这种情况下面会显示一片空白，像这样：</p>
+<p><a href="http://blog.liuyixi.com/wp-content/uploads/2010/07/4.jpg"><img src="http://blog.liuyixi.com/wp-content/uploads/2010/07/4.jpg" alt="" title="4"></a></p>
+<p>很容易看到页面下面是一片空白。<br>这个时候想到用一个层来让他浮动在底部来放置这张图片，但要适应浏览器高度让层在底部，所以CSS这样写。</p>
+<p><pre lang="CSS" line="1" file="download.txt" colla="+"></p>
+<p>#foot{<br>  width:100%;<br>  height:500px;<br>  position:absolute;<br>  top:100%;<br>  margin-top:-500px;<br>  background:url(footer.jpg) center bottom no-repeat;<br>}<br></pre><br>刷新页面后，咋一看，好像已经得到了想要的效果：</p>
+<p><a href="http://blog.liuyixi.com/wp-content/uploads/2010/07/1.jpg"><img src="http://blog.liuyixi.com/wp-content/uploads/2010/07/1.jpg" alt="" title="1"></a></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2010/07/15/rangdivjuwangyediduan/#more" rel="contents">
+              Ler mais &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
 
   </section>
 
@@ -1260,7 +1251,7 @@ return array (
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">176</span>
+              <span class="site-state-item-count">175</span>
               <span class="site-state-item-name">publicações</span>
             </a>
           </div>

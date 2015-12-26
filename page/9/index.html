@@ -205,103 +205,6 @@
             
               
                 
-                <a class="post-title-link" href="/2010/04/03/postby432010/" itemprop="url">
-                  Post  by 4/3/2010
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Postado em
-            <time itemprop="dateCreated" datetime="2010-04-03T15:09:55+08:00" content="2010-04-03">
-              2010-04-03
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; Em
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活琐事/" itemprop="url" rel="index">
-                    <span itemprop="name">生活琐事</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>很久没写博客了。</p>
-<p>最近也不是很忙，只是感觉很烦躁，很难平静下来去专心的做一些什么。</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2010/03/22/zuijinjingshenyaliyuelaiyueda/" itemprop="url">
                   最近精神压力越来越大。
                 </a>
@@ -1182,6 +1085,117 @@
 
 
     
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2010/02/01/win7vistaxiahuifulinuxyindaobingshezhimorenqidonglinux/" itemprop="url">
+                  win7(vista)下恢复Linux引导并设置默认启动Linux.
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Postado em
+            <time itemprop="dateCreated" datetime="2010-02-01T12:38:35+08:00" content="2010-02-01">
+              2010-02-01
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; Em
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/窗外的世界/" itemprop="url" rel="index">
+                    <span itemprop="name">窗外的世界</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>关于这个，在网上有很多的办法，有一个比较通用的办法便是手动编写boot.ini放在c盘文件夹，但网上往往给出了这个办法，但却不能设置默认启动linux。</p>
+<p>在这里先废话一下重装了windows 7后恢复Linux引导的办法。</p>
+<p>首先在网上下载grub4dos工具，把文件包中的 grldr 和 grldr.mbr 文件放到C盘（系统盘）根目录下，然后在根目录中新建文件 boot.ini 编写下面的内容：</p>
+<blockquote>
+<p>[boot loader]</p>
+<p>[operating systems]</p>
+<p>c:\grldr.mbr=”Archlinux”<br>重起后你就可以看到了效果，这时候在启动菜单中多了一个Archlinux的菜单，并正确的引导进入你的Linux系统。<br>你也可以下载我已经编辑好的三个文件，直接解压放到C盘根目录即可。</p>
+<p><a href="http://blog.liuyixi.com/upload/boot.tar.gz">点此下载</a><br>一般来说，这样便就可以了，但这里有一个不完美的地方，不能设置默认启动Linux ，即使在boot.ini中书写上defaut的代码。虽然大多数人或许用不到默认启动Linux，但对于我们这样主系统在Linux下的人来说，就比较麻烦了，每次开机的时候都要守到机器到选择启动菜单。</p>
+</blockquote>
+<p>因为现在windows使用BCD来管理启动项，即使添加了boot.ini文件，但是在win7中系统启动选项中却依然只有windows7一个选项。</p>
+<p>考虑到这点，我们便从BCD入手。</p>
+<p>我们需要一个工具，<a href="http://www.onlinedown.net/soft/58174.htm" target="_blank" rel="external">easyBCD</a>，软件安装好后，选择 Add/Remove Entries选项，在下面添加一个Linux的启动菜单。</p>
+<p><a href="http://blog.liuyixi.com/wp-content/uploads/2010/02/Capture.jpg"><img src="http://blog.liuyixi.com/wp-content/uploads/2010/02/Capture.jpg" alt="" title="EasyBCD"></a></p>
+<p>设置如图，这个时候你可以重起启动系统试试，如果在新出现的Arch Linux菜单中，能正确的引导进入你的Linux系统的话，那么就可以不用再做其他的了，并且可以删除之前在C盘的的boot.ini grldr grldr.mbr文件。并在windows 默认启动选项中选择新添加的Arch Linux即可。</p>
+<p>但如果你的情况和我一样，新添加的Arch Linux并不能正确的引导进入Linux系统的话，那便将c盘的grldr.mbr文件拷贝至C:/NST/文件目录下，并将之重命名替换之前目录下的NeoGrub.mbr文件。然后重起，若是能成功的进入Linux , 那么可以删除掉c盘根目录下的boot.ini文件。然后在windows启动设置中选择Arch Linux默认启动即可。</p>
+<p>当然，有人或许会质疑，为什么不用Live CD来恢复Grub 让Linux下的Grub来接管启动设置，当然这是一个比较好的办法，但是考虑到这样的情况，windows每次重装时，都会强制性的写入mbr，只要我们将boot.ini grldr grldr.mbr三个文件备份，每次重装后拷贝到c盘即可，而且我长期处于手里没有任何CD 或者U盘工具的情况下，我可以通过硬盘来完成重装系统，恢复引导。况且，linux重装的可能性比较小，而windows的重装可能性，大家就都知道了。</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
 
   </section>
 
@@ -1228,7 +1242,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">176</span>
+              <span class="site-state-item-count">175</span>
               <span class="site-state-item-name">publicações</span>
             </a>
           </div>

@@ -205,110 +205,6 @@
             
               
                 
-                <a class="post-title-link" href="/2012/04/11/javascriptfuzhijsonshuju/" itemprop="url">
-                  Javascript复制JSON数据
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Postado em
-            <time itemprop="dateCreated" datetime="2012-04-11T14:23:50+08:00" content="2012-04-11">
-              2012-04-11
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; Em
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">javascript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>复制数据很简单。</p>
-<p>var a = jsonobj;</p>
-<p>简单的就将jsonobj的值复制到了变量a中，但如果jsonobj是个json数据的话，你会发现修改a的值时，jsonobj也会跟着改变。</p>
-<p>如果你对javascript中的prototype那套机制比较了解的话可能就会大概明白是怎么回事，是的，因为json其实也是个object，所以var a = jsonobj 赋值时，中间有个原型链会将两个关联起来。</p>
-<p>要达到想要的复制数据也很简单：</p>
-<blockquote>
-<p>var a = JSON.parse(JSON.stringify(jsonobj));<br>将json序列化为string再还原成json，因为中间产生了新的对象，所以两者不再关联。</p>
-</blockquote>
-<p>这种写法看起来很不科学，但应该是比较好的办法了。</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2012/03/08/xinindexeddatabaseindexdbbiaozhun/" itemprop="url">
                   新Indexed Database(indexdb)标准
                 </a>
@@ -1274,6 +1170,103 @@ var document=unsafeWindow.document,$=unsafeWindow.$;
 
 
     
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2011/09/08/mimixiaocehua/" itemprop="url">
+                  秘密小策划
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Postado em
+            <time itemprop="dateCreated" datetime="2011-09-08T10:26:54+08:00" content="2011-09-08">
+              2011-09-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; Em
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/网络琐事/" itemprop="url" rel="index">
+                    <span itemprop="name">网络琐事</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>最近在策划着弄一个有意思的东西出来。</p>
+<p>嗯，眼尖人估计都能从本站发现到。</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
 
   </section>
 
@@ -1320,7 +1313,7 @@ var document=unsafeWindow.document,$=unsafeWindow.$;
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">176</span>
+              <span class="site-state-item-count">175</span>
               <span class="site-state-item-name">publicações</span>
             </a>
           </div>
