@@ -70,4 +70,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:Yixi/yixi.github.com.git
-  branch: gh-pages
+  branch: master
