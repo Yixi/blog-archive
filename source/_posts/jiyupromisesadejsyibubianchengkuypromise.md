@@ -19,7 +19,7 @@ Common JS提出了一种 Promises/A的建议来解决这个问题，一是易于
 [https://github.com/Yixi/YPromise](https://github.com/Yixi/YPromise)
 
 简单使用如下，更详细的请参考github
-<pre lang="javascript" line="1" file="download.txt" colla="+">
+{% codeblock lang:javascript %}
 function fun3(){
      return new YPro(function(comp,err){
         setTimeout(function(){
@@ -48,4 +48,4 @@ setTimeout(function(){
     });
 },9000);
 
-</pre>
+{% endcodeblock %}
